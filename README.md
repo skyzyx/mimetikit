@@ -11,17 +11,17 @@ _MimetiKit_ is a UI toolkit that re-implements certain Mac OS X & iOS elements i
 
 ## What does it mean?
 
-**mimetic |məˈmetik|**  
+**mimetic** |məˈmetik|  
 adjective formal or technical  
 relating to, constituting, or habitually practicing mimesis : mimetic patterns in butterflies.  
 
-**mimesis |məˈmēsis; mī-|**  
+**mimesis** |məˈmēsis; mī-|  
 noun formal or technical  
 imitation, in particular  
 - representation or imitation of the real world in art and literature.  
 - the deliberate imitation of the behavior of one group of people by another as a factor in social change.  
 
-**kit |kit|**  
+**kit** |kit|  
 noun  
 a set of articles or equipment needed for a specific purpose : _a first-aid kit._  
 - a set of all the parts needed to assemble something : _an aircraft kit._  
