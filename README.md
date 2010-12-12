@@ -47,6 +47,7 @@ Here is an initial list of things I want to build:
 
 * Drag a list item out onto a canvas for dropping.
 * iTunes/Finder sidebar tree.
+* Icon-based, Tweetie-like sidebar.
 * iPad-like context menus and tooltips.
 * iOS-like scrolling list headers. (e.g. the headers stay at the top as the items scroll by.)
 * Animated tab sections that resize appropriately as the tab content changes.
