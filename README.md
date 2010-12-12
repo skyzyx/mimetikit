@@ -12,17 +12,17 @@ _MimetiKit_ is a UI toolkit that re-implements certain Mac OS X & iOS elements i
 ## What does it mean?
 
 **mimetic** |məˈmetik|  
-adjective formal or technical  
+_adjective_ formal or technical  
 relating to, constituting, or habitually practicing mimesis : mimetic patterns in butterflies.  
 
 **mimesis** |məˈmēsis; mī-|  
-noun formal or technical  
+_noun_ formal or technical  
 imitation, in particular  
 - representation or imitation of the real world in art and literature.  
 - the deliberate imitation of the behavior of one group of people by another as a factor in social change.  
 
 **kit** |kit|  
-noun  
+_noun_  
 a set of articles or equipment needed for a specific purpose : _a first-aid kit._  
 - a set of all the parts needed to assemble something : _an aircraft kit._  
 - Brit. the clothing and other items belonging to a soldier or used in an activity such as a sport : _boys in football kit._  
@@ -57,3 +57,28 @@ Here is an initial list of things I want to build:
 * Vanishing iOS/iPhoto '11-style scrollbars.
 * Buttons and buttonsets.
 * DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).
+
+
+# License and Copyright
+
+Copyright (c) 2010 Ryan Parman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+<http://opensource.org/licenses/mit-license.php>
