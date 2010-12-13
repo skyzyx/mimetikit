@@ -45,20 +45,83 @@
 			<div class="mimetikit-context-tip-top"></div>
 			<div class="mimetikit-context-choices">
 				<div class="mimetikit-context-choices-visible">
-					<a href="" class="button green"><span class="text">OK</span></a>
-					<a href="" class="button blue"><span class="text">Information</span></a>
-					<a href="" class="button black"><span class="text">Cancel</span></a>
-					<a href="" class="button red"><span class="text">Delete</span></a>
-					<a href="" class="button"><span class="text">Default</span></a>
-					<a href="" class="button disabled"><span class="text">Disabled</span></a>
+					<a href="" class="button green">OK</a>
+					<a href="" class="button blue">Information</a>
+					<a href="" class="button black">Cancel</a>
+					<a href="" class="button red">Delete</a>
+					<a href="" class="button">Default</a>
+					<a href="" class="button disabled">Disabled</a>
 				</div>
 			</div>
 			<div class="mimetikit-context-tip-bottom"></div>
 		</div>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript" charset="utf-8">
+		<br><br><br><br>
 
+		<div style="margin: 20px" id="buttons">
+			<h3>Buttons</h3>
+			<div>
+				<a href="" class="button green">OK</a>
+				<a href="" class="button blue">Information</a>
+				<a href="" class="button black">Cancel</a>
+				<a href="" class="button red">Delete</a>
+				<a href="" class="button">Default</a>
+				<a href="" class="button disabled">Disabled</a>
+			</div>
+			<br>
+			<div>
+				<a href="" class="button green small">OK</a>
+				<a href="" class="button blue small">Information</a>
+				<a href="" class="button black small">Cancel</a>
+				<a href="" class="button red small">Delete</a>
+				<a href="" class="button small">Default</a>
+				<a href="" class="button disabled small">Disabled</a>
+			</div>
+			<br>
+			<div class="mimetikit-button-group">
+				<a href="" class="button btn-left">Default</a>
+				<a href="" class="button">Default</a>
+				<a href="" class="button">Default</a>
+				<a href="" class="button">Default</a>
+				<a href="" class="button btn-right">Default</a>
+			</div>
+			<br><br>
+			<div class="mimetikit-button-group">
+				<a href="" class="button btn-left small">Default</a>
+				<a href="" class="button small">Default</a>
+				<a href="" class="button small">Default</a>
+				<a href="" class="button small">Default</a>
+				<a href="" class="button btn-right small">Default</a>
+			</div>
+
+			<h3>Scripted Buttons</h3>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="mimetikit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="util/dombuilder/dombuilder.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="util/buttons/buttons.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			var _ = DOMBuilder, hook;
+
+			$('#buttons').get(0).appendChild(_.DOM([
+				new MimetiKit.Button('OK', 'green', {
+					'class': 'wonderful',
+					'id': 'abc234',
+					'onclick': function(evt) {
+						window.alert('Click!');
+						evt.preventDefault();
+					}
+				}),
+				new MimetiKit.Button('Information', 'blue'),
+				new MimetiKit.Button('Cancel', 'black'),
+				new MimetiKit.Button('Delete', 'red'),
+				new MimetiKit.Button('Default', 'default'),
+				new MimetiKit.Button('Disabled', 'disabled')
+			]));
+
+		});
 		</script>
 	</body>
 </html>

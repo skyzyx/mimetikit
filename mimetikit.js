@@ -1,5 +1,5 @@
 /**
- * CONTEXT MENU
+ * MIMETIKIT CORE
  * Part of MimetiKit <http://github.com/skyzyx/mimetikit>
  * MIT Licensed - http://creativecommons.org/licenses/MIT/
  *
@@ -14,8 +14,8 @@
 /*global window */
 
 
-(function($) {
-	$.fn.contextMenu = function() {
-
+(function() {
+	window.MimetiKit = {
+		'VERSION': '0.1'
 	};
-})(jQuery);
+})();
