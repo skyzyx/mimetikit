@@ -1,0 +1,331 @@
+/**
+ * buttons.css
+ */
+
+
+/*********************************************
+Setup
+*********************************************/
+.mimetikit-button-group,
+button,
+input.button,
+input[type=button],
+a.button,
+a.button:hover {
+	/* Cross-browser inline-block */
+	display: inline-block;
+	vertical-align: top;
+	min-height: 0;
+}
+
+/* onfocus */
+button:focus, button:active,
+input.button:focus, input.button:active,
+input[type=button]:focus, input[type=button]:active,
+a.button:focus, a.button:active {
+	outline: none;
+}
+
+
+/*********************************************
+Default state
+*********************************************/
+button,
+input.button,
+input[type=button],
+a.button,
+a.button:hover {
+	font-size: 13px !important;
+	line-height: 1.3em;
+	font-weight: bold;
+	color: #000;
+	padding: 5px 10px;
+	margin: 0 3px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #333;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	text-align: center;
+
+/*	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #fff),
+		color-stop(0.4, #eee),
+		color-stop(0.75, #ddd),
+		color-stop(1, #ddd)
+	);*/
+
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #fff),
+		color-stop(0.49, #fff),
+		color-stop(0.5, #edeff3),
+		color-stop(1, #edeff3)
+	);
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* onclick */
+button:active, button.selected,
+input.button:active, input.button.selected,
+input[type=button]:active, input[type=button].selected,
+a.button:active, a.button.selected {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(1, #edeff3),
+		color-stop(0.49, #edeff3),
+		color-stop(0.5, #fff),
+		color-stop(0, #fff)
+	);
+}
+
+
+/*********************************************
+Green state
+*********************************************/
+button.green,
+input.button.green,
+input[type=button].green,
+a.button.green,
+a.button.green:hover {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #a2c69c),
+		color-stop(0.49, #41bf4a),
+		color-stop(0.5, #0eb81d),
+		color-stop(1, #0d9c23)
+	);
+	color: #fff;
+	text-shadow: 0 -1px 0 #40464b;
+	border-top: 1px solid #d6e6d3;
+}
+
+/* onclick */
+button.green:active, button.green.selected,
+input.green.button:active, input.green.button.selected,
+input[type=button].green:active, input[type=button].green.selected,
+a.green.button:active, a.green.button.selected {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #0d9c23),
+		color-stop(0.49, #0eb81d),
+		color-stop(0.5, #41bf4a),
+		color-stop(1, #a2c69c)
+	);
+}
+
+
+/*********************************************
+Red state
+*********************************************/
+button.red,
+input.button.red,
+input[type=button].red,
+a.button.red,
+a.button.red:hover {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #f39aa0),
+		color-stop(0.49, #e73340),
+		color-stop(0.5, #e10111),
+		color-stop(1, #ed1414)
+	);
+	color: #fff;
+	text-shadow: 0 -1px 0 #40464b;
+	border-top: 1px solid #f8c9cc;
+}
+
+/* onclick */
+button.red:active, button.red.selected,
+input.red.button:active, input.red.button.selected,
+input[type=button].red:active, input[type=button].red.selected,
+a.red.button:active, a.red.button.selected {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #ed1414),
+		color-stop(0.49, #e10111),
+		color-stop(0.5, #e73340),
+		color-stop(1, #f39aa0)
+	);
+}
+
+
+/*********************************************
+Blue state
+*********************************************/
+button.blue,
+input.button.blue,
+input[type=button].blue,
+a.button.blue,
+a.button.blue:hover {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #7c98ed),
+		color-stop(0.49, #416ae5),
+		color-stop(0.5, #1e4ee1),
+		color-stop(1, #1e4ee1)
+	);
+	color: #fff;
+	text-shadow: 0 -1px 0 #40464b;
+	border-top: 1px solid #b3d0f3;
+}
+
+/* onclick */
+button.blue:active, button.blue.selected,
+input.blue.button:active, input.blue.button.selected,
+input[type=button].blue:active, input[type=button].blue.selected,
+a.blue.button:active, a.blue.button.selected {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #1e4ee1),
+		color-stop(0.49, #1e4ee1),
+		color-stop(0.5, #416ae5),
+		color-stop(1, #7c98ed)
+	);
+}
+
+
+/*********************************************
+Black state
+*********************************************/
+button.black,
+input.button.black,
+input[type=button].black,
+a.button.black,
+a.button.black:hover {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #6b7077),
+		color-stop(0.49, #363e46),
+		color-stop(0.5, #2b323b),
+		color-stop(1, #444a53)
+	);
+	color: #fff;
+	text-shadow: 0 -1px 0 #40464b;
+	border-top: 1px solid #888c91;
+}
+
+/* onclick */
+button.black:active, button.black.selected,
+input.black.button:active, input.black.button.selected,
+input[type=button].black:active, input[type=button].black.selected,
+a.black.button:active, a.black.button.selected {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #444a53),
+		color-stop(0.49, #2b323b),
+		color-stop(0.5, #363e46),
+		color-stop(1, #6b7077)
+	);
+}
+
+
+/*********************************************
+Disabled state
+*********************************************/
+button.disabled,
+input.button.disabled,
+input[type=button].disabled,
+a.button.disabled,
+a.button.disabled:hover {
+	color: #aaa;
+	background: none;
+	background-color: #eee;
+	text-shadow: none;
+	border: 1px solid #bbb;
+
+	-webkit-box-shadow: none;
+}
+
+
+/*********************************************
+Standard button group styles
+*********************************************/
+.mimetikit-button-group button,
+.mimetikit-button-group input.button,
+.mimetikit-button-group input[type=button],
+.mimetikit-button-group a.button,
+.mimetikit-button-group a.button:hover {
+	margin: 0 -3px;
+	-webkit-border-radius: 0 !important;
+}
+
+.mimetikit-button-group button.btn-left,
+.mimetikit-button-group input.button.btn-left,
+.mimetikit-button-group input[type=button].btn-left,
+.mimetikit-button-group a.button.btn-left {
+	-webkit-border-top-left-radius: 5px !important;
+	-webkit-border-bottom-left-radius: 5px !important;
+}
+
+.mimetikit-button-group button.btn-right,
+.mimetikit-button-group input.button.btn-right,
+.mimetikit-button-group input[type=button].btn-right,
+.mimetikit-button-group a.button.btn-right {
+	-webkit-border-top-right-radius: 5px !important;
+	-webkit-border-bottom-right-radius: 5px !important;
+}
+
+
+/*********************************************
+Small button override styles
+*********************************************/
+button.small,
+input.button.small,
+input[type=button].small,
+a.button.small,
+a.button.small:hover {
+	font-size: 11px !important;
+	line-height: 1.2em;
+	padding: 3px 5px;
+
+	-webkit-border-radius: 3px;
+}
+
+
+/*********************************************
+Small button group override styles
+*********************************************/
+.mimetikit-button-group button.small.btn-left,
+.mimetikit-button-group input.button.small.btn-left,
+.mimetikit-button-group input[type=button].small.btn-left,
+.mimetikit-button-group a.button.small.btn-left {
+	-webkit-border-top-left-radius: 3px !important;
+	-webkit-border-bottom-left-radius: 3px !important;
+}
+
+.mimetikit-button-group button.small.btn-right,
+.mimetikit-button-group input.button.small.btn-right,
+.mimetikit-button-group input[type=button].small.btn-right,
+.mimetikit-button-group a.button.small.btn-right {
+	-webkit-border-top-right-radius: 3px !important;
+	-webkit-border-bottom-right-radius: 3px !important;
+}

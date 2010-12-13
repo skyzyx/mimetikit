@@ -1,0 +1,53 @@
+/**
+ * grid.css
+ */
+
+
+/*********************************************
+Base styles
+*********************************************/
+.grid { float: left; margin-right: 20px; }
+.gridp { padding: 20px; }
+.gridlast { margin-right: 0; }
+
+
+/*********************************************
+Standard columns. Use with .grid
+*********************************************/
+.grid1 { width: 44px; }
+.grid2 { width: 108px; }
+.grid3 { width: 172px; }
+.grid4 { width: 236px; }
+.grid5 { width: 300px; }
+.grid6 { width: 364px; }
+.grid7 { width: 428px; }
+.grid8 { width: 492px; }
+.grid9 { width: 556px; }
+.grid10 { width: 620px; }
+.grid11 { width: 684px; }
+.grid12 { width: 748px; }
+.grid13 { width: 812px; }
+.grid14 { width: 876px; }
+.grid15 { width: 940px; }
+.grid16 { width: 1004px; }
+
+
+/*********************************************
+Padded columns. Use with .grid and .gridp
+*********************************************/
+.grid1p { width: 4px; }
+.grid2p { width: 68px; }
+.grid3p { width: 132px; }
+.grid4p { width: 196px; }
+.grid5p { width: 260px; }
+.grid6p { width: 324px; }
+.grid7p { width: 388px; }
+.grid8p { width: 452px; }
+.grid9p { width: 516px; }
+.grid10p { width: 580px; }
+.grid11p { width: 644px; }
+.grid12p { width: 708px; }
+.grid13p { width: 772px; }
+.grid14p { width: 836px; }
+.grid15p { width: 900px; }
+.grid16p { width: 964px; }
