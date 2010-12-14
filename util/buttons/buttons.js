@@ -22,10 +22,12 @@
 		// Prep variables
 		var classnames = [],
 			events = [],
+			opt = opt || {},
 			dom, key, event;
 
+
 		// Handle classnames
-		if (typeof opt['class'] === 'string') {
+		if (opt['class'] !== undefined && typeof opt['class'] === 'string') {
 			classnames = opt['class'].split(' ');
 		}
 		classnames.push('button');
@@ -52,9 +54,21 @@
 
 		// Return the DOM node
 		return dom;
+	},
+
+	ButtonGroup = function(buttons) {
+		return _('div', { 'class':'mimetikit-button-group' }).child(function(buttons) {
+			if (typeof obj !== 'object' || typeof obj.length !== 'number' || typeof obj.splice !== 'function') {
+				buttons = [buttons];
+			}
+			buttons[0].className += ' btn-left';
+			buttons[buttons.length - 1].className += ' btn-right';
+			return buttons;
+		}(buttons)).asDOM();
 	};
 
 	// Expose to the global scope
 	window.MimetiKit.Button = Button;
+	window.MimetiKit.ButtonGroup = ButtonGroup;
 
 })(jQuery);

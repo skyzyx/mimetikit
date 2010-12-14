@@ -97,9 +97,9 @@
 			<h3>Scripted Buttons</h3>
 		</div>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="mimetikit.js" type="text/javascript" charset="utf-8"></script>
-		<script src="util/dombuilder/dombuilder.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="util/dombuilder/dombuilder.js" type="text/javascript" charset="utf-8"></script>
 		<script src="util/buttons/buttons.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
 		$(function() {
@@ -121,6 +121,15 @@
 				new MimetiKit.Button('Disabled', 'disabled')
 			]));
 
+			$('#buttons').get(0).appendChild(_.DOM(
+				new MimetiKit.ButtonGroup([
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default')
+				])
+			));
 		});
 		</script>
 	</body>
