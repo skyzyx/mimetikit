@@ -1,0 +1,7 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 14px/1.4em "Lucida Grande", "Droid Sans", "Helvetica Neue", Verdana, sans-serif;
+	background: #e3dfcf url(BackgroundList.png) repeat 0 0;
+	text-rendering:optimizeLegibility;
+}

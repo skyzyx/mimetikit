@@ -3,14 +3,12 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>MimetiKit Demo</title>
+
+		<link rel="stylesheet" href="_global.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="../plugins/context-menu/context-menu.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="../util/buttons/buttons.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
 		<style type="text/css" media="screen">
-		body {
-			margin: 0;
-			padding: 0;
-			font: 14px/1.4em "Lucida Grande", "Droid Sans", Verdana, sans-serif;
-			background: #e3dfcf url(BackgroundList.png) repeat 0 0;
-			text-rendering:optimizeLegibility;
-		}
 		div#navigation {
 			background-color: #eee;
 		}
@@ -26,9 +24,6 @@
 			line-height: 2em;
 		}
 		</style>
-		<link rel="stylesheet" href="plugins/context-menu/context-menu.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<link rel="stylesheet" href="util/buttons/buttons.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
 	</head>
 
 	<body>
@@ -80,25 +75,18 @@
 			<h3>Scripted Buttons</h3>
 		</div>
 
-		<script src="jquery/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="jquery/jquery-ui-1.8.7.custom.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="mimetikit.js" type="text/javascript" charset="utf-8"></script>
-		<script src="util/dombuilder/dombuilder.js" type="text/javascript" charset="utf-8"></script>
-		<script src="util/buttons/buttons.js" type="text/javascript" charset="utf-8"></script>
-		<script src="plugins/context-menu/context-menu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jquery/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jquery/jquery-ui-1.8.7.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../mimetikit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../util/dombuilder/dombuilder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../util/buttons/buttons.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/context-menu/context-menu.js" type="text/javascript" charset="utf-8"></script>
+
 		<script type="text/javascript" charset="utf-8">
 		$(function() {
 			var _ = DOMBuilder, hook;
 
-			$('a.hook3').contextMenu([
-				new MimetiKit.Button('Agree', 'green'),
-				new MimetiKit.Button('Read the terms of service', 'default'),
-				new MimetiKit.Button('Read the privacy policy', 'default'),
-				new MimetiKit.Button('Suggest revisions to the terms of service', 'disabled'),
-				new MimetiKit.Button('Decline', 'red'),
-				new MimetiKit.Button('Cancel', 'black')
-			]);
-
+			// Add a menu to "Menu 2"
 			$('a.hook2').contextMenu([
 				new MimetiKit.Button('OK', 'green', {
 					'class': 'wonderful',
@@ -115,6 +103,17 @@
 				new MimetiKit.Button('Disabled', 'disabled')
 			]);
 
+			// Add a menu to "Menu 3"
+			$('a.hook3').contextMenu([
+				new MimetiKit.Button('Agree', 'green'),
+				new MimetiKit.Button('Read the terms of service', 'default'),
+				new MimetiKit.Button('Read the privacy policy', 'default'),
+				new MimetiKit.Button('Suggest revisions to the terms of service', 'disabled'),
+				new MimetiKit.Button('Decline', 'red'),
+				new MimetiKit.Button('Cancel', 'black')
+			]);
+
+			// Add buttons underneath the "Scripted Buttons" section
 			$('#buttons').get(0).appendChild(_.DOM([
 				new MimetiKit.Button('OK', 'green', {
 					'class': 'wonderful',
@@ -131,6 +130,7 @@
 				new MimetiKit.Button('Disabled', 'disabled')
 			]));
 
+			// Button Groups aren't quite working yet...
 			// $('#buttons').get(0).appendChild(_.DOM(
 			// 	new MimetiKit.ButtonGroup([
 			// 		new MimetiKit.Button('Default', 'default'),
