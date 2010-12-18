@@ -11,21 +11,21 @@ _MimetiKit_ is a UI toolkit that re-implements certain Mac OS X & iOS elements i
 
 ## What does it mean?
 
-**mimetic** |məˈmetik|
-_adjective_ formal or technical
-relating to, constituting, or habitually practicing mimesis : mimetic patterns in butterflies.
+	**mimetic** |məˈmetik|
+	_adjective_ formal or technical
+	relating to, constituting, or habitually practicing mimesis : mimetic patterns in butterflies.
 
-**mimesis** |məˈmēsis; mī-|
-_noun_ formal or technical
-imitation, in particular
-- representation or imitation of the real world in art and literature.
-- the deliberate imitation of the behavior of one group of people by another as a factor in social change.
+	**mimesis** |məˈmēsis; mī-|
+	_noun_ formal or technical
+	imitation, in particular
+	- representation or imitation of the real world in art and literature.
+	- the deliberate imitation of the behavior of one group of people by another as a factor in social change.
 
-**kit** |kit|
-_noun_
-a set of articles or equipment needed for a specific purpose : _a first-aid kit._
-- a set of all the parts needed to assemble something : _an aircraft kit._
-- Brit. the clothing and other items belonging to a soldier or used in an activity such as a sport : _boys in football kit._
+	**kit** |kit|
+	_noun_
+	a set of articles or equipment needed for a specific purpose : _a first-aid kit._
+	- a set of all the parts needed to assemble something : _an aircraft kit._
+	- Brit. the clothing and other items belonging to a soldier or used in an activity such as a sport : _boys in football kit._
 
 _MimetiKit_ is also a modified version of _mimetic polyalloy_ -- the liquid metal substance that the T-1000 was made out of in [Terminator 2: Judgement Day](http://www.imdb.com/title/tt0103064/). This is a play-on-words relating to the Appcelerator Titanium product.
 
@@ -48,7 +48,7 @@ Here is an initial list of things I want to build:
 * Drag a list item out onto a canvas for dropping.
 * iTunes/Finder sidebar tree.
 * Icon-based, Tweetie-like sidebar.
-* iPad-like context menus and tooltips.
+* <strike>iPad-like context menus</strike> and tooltips.
 * iOS-like scrolling list headers. (e.g. the headers stay at the top as the items scroll by.)
 * Animated tab sections that resize appropriately as the tab content changes.
 * Growl notification display & history. This blends ideas from Growl and Android notification history.
@@ -56,9 +56,9 @@ Here is an initial list of things I want to build:
 * Table sorting where rows and columns visibly reorder themselves.
 * Slick pagination logic.
 * Vanishing iOS/iPhoto '11-style scrollbars.
-* Buttons and buttonsets.
+* <strike>Buttons</strike> and buttonsets.
 * Click-and-drag support for checkbox multiselect.
-* DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).
+* <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).~</strike>
 
 
 # License and Copyright
