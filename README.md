@@ -58,7 +58,7 @@ Here is an initial list of things I want to build:
 * Vanishing iOS/iPhoto '11-style scrollbars.
 * <strike>Buttons</strike> and buttonsets.
 * Click-and-drag support for checkbox multiselect.
-* <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).~</strike>
+* <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).</strike>
 
 
 # License and Copyright
