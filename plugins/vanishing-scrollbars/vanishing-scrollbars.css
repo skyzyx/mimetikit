@@ -1,0 +1,46 @@
+/**
+ * vanishing-scrollbars.css
+ */
+
+
+/*********************************************
+Container
+*********************************************/
+.mimetikit-scrollbars,
+.mimetikit-scrollbars div.mimetikit-scrollbars-inner {
+	overflow: hidden;
+	position: relative;
+}
+
+.mimetikit-scrollbars div.mimetikit-scrollbars-inner {
+	overflow-y: scroll;
+}
+
+.mimetikit-scrollbars div.mimetikit-scrollbar-vertical {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 12px;
+	padding: 5px 0;
+	height: 100%;
+	background-color: inherit;
+
+	-webkit-transition: opacity 0.5s;
+}
+
+.mimetikit-scrollbars:hover div.mimetikit-scrollbar-vertical {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+}
+
+.mimetikit-scrollbars div.mimetikit-scrollbar-vertical div.mimetikit-scrollbar {
+	position: absolute;
+	background-color: #000;
+	width: 8px;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0.1;
+
+	-webkit-border-radius: 8px;
+}

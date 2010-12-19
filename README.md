@@ -84,3 +84,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 <http://opensource.org/licenses/mit-license.php>
+
+## Includes the following third-party software
+
+### [jquery.getscrollbarwidth.js](https://github.com/brandonaaron/jquery-getscrollbarwidth)
+
+Copyright (c) 2008 [Brandon Aaron](http://brandonaaron.net). Dual licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) and [GPL](http://www.opensource.org/licenses/gpl-license.php) licenses.
