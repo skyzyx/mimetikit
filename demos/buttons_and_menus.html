@@ -130,16 +130,31 @@
 				new MimetiKit.Button('Disabled', 'disabled')
 			]));
 
-			// Button Groups aren't quite working yet...
-			// $('#buttons').get(0).appendChild(_.DOM(
-			// 	new MimetiKit.ButtonGroup([
-			// 		new MimetiKit.Button('Default', 'default'),
-			// 		new MimetiKit.Button('Default', 'default'),
-			// 		new MimetiKit.Button('Default', 'default'),
-			// 		new MimetiKit.Button('Default', 'default'),
-			// 		new MimetiKit.Button('Default', 'default')
-			// 	])
-			// ));
+			$('#buttons').get(0).appendChild(_.DOM([_('br'), _('br')]));
+
+			// Button groups
+			$('#buttons').get(0).appendChild(_.DOM(
+				new MimetiKit.ButtonGroup([
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default')
+				])
+			));
+
+			$('#buttons').get(0).appendChild(_.DOM([_('br'), _('br')]));
+
+			// Button groups (small)
+			$('#buttons').get(0).appendChild(_.DOM(
+				new MimetiKit.ButtonGroup([
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default'),
+					new MimetiKit.Button('Default', 'default')
+				], 'small')
+			));
 		});
 		</script>
 	</body>

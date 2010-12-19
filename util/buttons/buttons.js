@@ -56,14 +56,31 @@
 		return dom;
 	},
 
-	ButtonGroup = function(buttons) {
+	ButtonGroup = function(buttons, type) {
+
 		return _('div', { 'class':'mimetikit-button-group' }).child(function(buttons) {
-			if (typeof obj !== 'object' || typeof obj.length !== 'number' || typeof obj.splice !== 'function') {
+
+			var i, max;
+
+			if (typeof buttons !== 'object' || typeof buttons.length !== 'number' || typeof buttons.splice !== 'function') {
 				buttons = [buttons];
 			}
+
+			if (typeof type === undefined || typeof type === null) {
+				type = '';
+			}
+
 			buttons[0].className += ' btn-left';
 			buttons[buttons.length - 1].className += ' btn-right';
+
+			if (type !== '') {
+				for (i = 0, max = buttons.length; i < max; i++) {
+					buttons[i].className += ' ' + type;
+				}
+			}
+
 			return buttons;
+
 		}(buttons)).asDOM();
 	};
 
