@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Click-n-Drag Checkbox Selection Demo</title>
+
+		<link rel="stylesheet" href="_global.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="../plugins/vanishing-scrollbars/vanishing-scrollbars.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+		<style type="text/css" media="screen">
+		body {
+			font: 16px/1.4em "Lucida Grande", "Droid Sans", "Helvetica Neue", Verdana, sans-serif;
+		}
+		ul li {
+			list-style: none;
+			margin: 0;
+			padding: 3px;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<fieldset class="one">
+			<legend>Group One</legend>
+			<ul>
+				<li><input type="checkbox" /> <span>Dracula</span></li>
+				<li><input type="checkbox" /> <span>Edward Cullen</span></li>
+				<li><input type="checkbox" /> <span>Bill Compton</span></li>
+				<li><input type="checkbox" /> <span>Louis de Pointe du Lac</span></li>
+			</ul>
+		</fieldset>
+
+		<fieldset class="two"t>
+			<legend>Group Two</legend>
+			<ul>
+				<li><input type="checkbox" /> <span>Mrs. Dracula</span></li>
+				<li><input type="checkbox" /> <span>Bella Swan</span></li>
+				<li><input type="checkbox" /> <span>Sookie Stackhouse</span></li>
+				<li><input type="checkbox" /> <span>Lestat de Lioncourt</span></li>
+			</ul>
+		</fieldset>
+
+		<script src="../jquery/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/drag-select-checkboxes/drag-select-checkboxes.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+
+			$('fieldset.one').dragSelectCheckboxes('ul li')
+			$('fieldset.two').dragSelectCheckboxes('ul li')
+
+		});
+		</script>
+	</body>
+</html>

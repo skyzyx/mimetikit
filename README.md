@@ -46,7 +46,6 @@ There are a few goals for this project.
 Not started yet:
 
 * Icon-based, Tweetie-like sidebar.
-* Click-and-drag support for checkbox multiselect.
 * Table sorting where rows and columns visibly reorder themselves.
 * Animated tab sections that resize appropriately as the tab content changes.
 * iOS-like scrolling list headers. (e.g. the headers stay at the top as the items scroll by.)
@@ -64,6 +63,7 @@ Done:
 * <strike>Button Groups</strike>
 * <strike>iPad-like context menus</strike>
 * <strike>Vanishing iOS/iPhoto '11-style scrollbars</strike>
+* <strike>Click-and-drag support for checkbox multiselect.</strike>
 * <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).</strike>
 
 
