@@ -43,21 +43,27 @@ There are a few goals for this project.
 
 ## Todos
 
-Here is an initial list of things I want to build:
+Not started yet:
 
-* Drag a list item out onto a canvas for dropping.
-* iTunes/Finder sidebar tree.
 * Icon-based, Tweetie-like sidebar.
-* <strike>iPad-like context menus</strike> and tooltips.
-* iOS-like scrolling list headers. (e.g. the headers stay at the top as the items scroll by.)
+* Click-and-drag support for checkbox multiselect.
+* Table sorting where rows and columns visibly reorder themselves.
 * Animated tab sections that resize appropriately as the tab content changes.
+* iOS-like scrolling list headers. (e.g. the headers stay at the top as the items scroll by.)
 * Growl notification display & history. This blends ideas from Growl and Android notification history.
 * Lists and grids where removed items fade before collapsing. Apply the reverse for adding items. Good for filtering.
-* Table sorting where rows and columns visibly reorder themselves.
-* Slick pagination logic.
-* Vanishing iOS/iPhoto '11-style scrollbars.
-* <strike>Buttons</strike> and buttonsets.
-* Click-and-drag support for checkbox multiselect.
+
+In progress:
+
+* Button Groups
+* iTunes/Finder sidebar tree.
+* Drag a list item out onto a canvas for dropping.
+
+Done:
+
+* <strike>Buttons</strike>
+* <strike>iPad-like context menus</strike>
+* <strike>Vanishing iOS/iPhoto '11-style scrollbars</strike>
 * <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).</strike>
 
 
