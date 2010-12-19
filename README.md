@@ -55,13 +55,13 @@ Not started yet:
 
 In progress:
 
-* Button Groups
 * iTunes/Finder sidebar tree.
 * Drag a list item out onto a canvas for dropping.
 
 Done:
 
 * <strike>Buttons</strike>
+* <strike>Button Groups</strike>
 * <strike>iPad-like context menus</strike>
 * <strike>Vanishing iOS/iPhoto '11-style scrollbars</strike>
 * <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).</strike>
