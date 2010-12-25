@@ -46,6 +46,7 @@ There are a few goals for this project.
 Not started yet:
 
 * Icon-based, Tweetie-like sidebar.
+* Drag a list item out onto a canvas for dropping.
 * Table sorting where rows and columns visibly reorder themselves.
 * Animated tab sections that resize appropriately as the tab content changes.
 * iOS-like scrolling list headers. (e.g. the headers stay at the top as the items scroll by.)
@@ -54,14 +55,13 @@ Not started yet:
 
 In progress:
 
-* iTunes/Finder sidebar tree.
-* Drag a list item out onto a canvas for dropping.
 
 Done:
 
 * <strike>Buttons</strike>
 * <strike>Button Groups</strike>
 * <strike>iPad-like context menus</strike>
+* <strike>iTunes/Finder sidebar tree.</strike>
 * <strike>Vanishing iOS/iPhoto '11-style scrollbars</strike>
 * <strike>Click-and-drag support for checkbox multiselect.</strike>
 * <strike>DOM generation utility. This will be [DOMBuilder](http://github.com/skyzyx/dombuilder).</strike>
