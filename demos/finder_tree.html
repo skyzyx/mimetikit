@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Finder/iTunes Sidebar Tree Demo</title>
+
+		<link rel="stylesheet" href="_global.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="../plugins/finder-tree/finder-tree.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+		<style type="text/css" media="screen">
+		html, body {
+			height: 100%;
+		}
+		body {
+			font: 14px/1.4em "Lucida Grande", "Segoe", "Tahoma", sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		div#sidebar {
+			width: 200px;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Hook -->
+		<div id="sidebar" class="sidebar"></div>
+
+		<script src="../jquery/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jquery/jquery-ui-1.8.7.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../mimetikit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../util/dombuilder/dombuilder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/finder-tree/finder-tree.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			var _ = DOMBuilder;
+
+			$('div#sidebar').mkSidebar({
+				'Places': [
+					{
+						'label': 'Desktop',
+						'href': '#',
+						'target': 'content'
+					},
+					{
+						'label': 'Documents',
+						'href': '#',
+						'target': 'content'
+					},
+					{
+						'label': 'rparman',
+						'href': '#',
+						'target': 'content'
+					}
+				],
+				'Searches': [
+					{
+						'label': 'Documents',
+						'href': '#',
+						'target': 'content'
+					},
+					{
+						'label': 'Images',
+						'href': '#',
+						'target': 'content'
+					}
+				]
+			}).find('ul li a').click(function(evt) {
+				evt.preventDefault();
+			});
+
+		});
+		</script>
+	</body>
+</html>
